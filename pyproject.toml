@@ -1,0 +1,26 @@
+[project]
+name = "llm-zoomcamp-2026-monitoring"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vinodh06", email = "vinodhkumarg@ymail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "openai>=3.58.0",
+    "psycopg[binary]>=3.3.9",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "streamlit>=1.67.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+llm-zoomcamp-2026-monitoring = "llm_zoomcamp_2026_monitoring:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
